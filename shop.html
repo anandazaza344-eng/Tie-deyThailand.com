@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><span class="lang th active">ร้านค้า</span><span class="lang en">Shop</span> - Tie-dye</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a class="navbar-brand" href="index.html">Tie-dye</a>
+      </div>
+
+      <div class="ms-auto me-3 lang-wrapper">
+        <div class="dropdown">
+          <button class="btn btn-lang dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span class="lang th active">ไทย</span>
+            <span class="lang en">EN</span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="langDropdown">
+            <li><a class="dropdown-item" href="#" onclick="switchLang('th')">ไทย</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLang('en')">EN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER -->
+  <div class="banner">
+    <img src="image/kp6.jpg" alt="">
+    <div class="banner-title">
+      <h1>
+        <span class="lang th active">ร้านค้า</span>
+        <span class="lang en">Shop</span>
+      </h1>
+    </div>
+  </div>
+
+  <section class="product-grid container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card">
+          <img src="image/aproducts02.png" alt="สินค้า">
+          <div class="product-info">
+            <h3>
+              <span class="lang th active">เสื้อมัดย้อม</span>
+              <span class="lang en">Tie dyed shiet</span>
+            </h3>
+            <p class="price">฿ 400</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card">
+          <img src="image/aproducts04.png" alt="สินค้า">
+          <div class="product-info">
+            <h3>
+              <span class="lang th active">กระเป๋าผ้าหูรูดมัดย้อม</span>
+              <span class="lang en">Tie dyed drawsting bag</span>
+            </h3>
+            <p class="price">฿ 150</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card">
+          <img src="image/aproducts05.png" alt="สินค้า">
+          <div class="product-info">
+            <h3>
+              <span class="lang th active">หมอนมัดย้อม</span>
+              <span class="lang en">Tie dyed pillow</span>
+            </h3>
+            <p class="price">฿ 200</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-grid container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card">
+          <img src="image/aproducts03.png" alt="สินค้า">
+          <div class="product-info">
+            <h3>
+              <span class="lang th active">กระเป๋าผ้ามัดย้อม</span>
+              <span class="lang en">Tie dyen fabric bag</span>
+            </h3>
+            <p class="price">฿ 250</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card">
+          <img src="image/aproducts06.png" alt="สินค้า">
+          <div class="product-info">
+            <h3>
+              <span class="lang th active">ผ้ามัดย้อม</span>
+              <span class="lang en">Tie dyed fabric</span>
+            </h3>
+            <p class="price">฿ 350</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card">
+          <img src="image/aproducts07.png" alt="สินค้า">
+          <div class="product-info">
+            <h3>
+              <span class="lang th active">หมวกมัดย้อม</span>
+              <span class="lang en">Tie-dye hat</span>
+            </h3>
+            <p class="price">฿250</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 text-center bg-dark text-light mt-5">
+    <div class="container">
+      <p>&copy; 2025 Tie-dye. <span class="lang th active">สงวนลิขสิทธิ์</span><span class="lang en">All rights
+          reserved</span></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang.' + lang).forEach(el => el.classList.add('active'));
+
+      const titleElement = document.querySelector('title .lang.active');
+      if (titleElement) {
+        document.title = titleElement.textContent + ' - Tie-dye';
+      }
+    }
+
+    switchLang('th');
+  </script>
+</body>
+
+</html>

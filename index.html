@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tie-dye</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html">Tie-dye</a>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-bs-toggle="dropdown">
+              <span class="lang th active">เกี่ยวกับ</span>
+              <span class="lang en">About</span>
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li>
+                <a class="dropdown-item" href="history.html">
+                  <span class="lang th active">ประวัติ</span>
+                  <span class="lang en">History</span>
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="howtomake.html">
+                  <span class="lang th active">วิธีทำสินค้า</span>
+                  <span class="lang en">How We Make Products</span>
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="facilities.html">
+                  <span class="lang th active">เกี่ยวกับสินค้า</span>
+                  <span class="lang en">About Products</span>
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="highlights.html">
+                  <span class="lang th active">กิจกรรมและอีเวนต์</span>
+                  <span class="lang en">Events & Highlights</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">
+              <span class="lang th active">ร้านค้า</span>
+              <span class="lang en">Shop</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              <span class="lang th active">ติดต่อ</span>
+              <span class="lang en">Contact</span>
+            </a>
+          </li>
+
+          <div class="ms-auto me-3">
+            <div class="dropdown">
+              <button class="btn btn-lang dropdown-toggle" id="langDropdown" data-bs-toggle="dropdown">
+                <span class="lang th active">ไทย</span>
+                <span class="lang en">EN</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="langDropdown">
+                <li><a class="dropdown-item" href="#" onclick="switchLang('th')">ไทย</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLang('en')">EN</a></li>
+              </ul>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- BANNER -->
+  <div class="banner">
+    <img src="image/home B.png" alt="">
+    <div class="banner-title">Tie-dye</div>
+  </div>
+
+  <section class="menu-cards">
+
+    <a href="history.html" class="menu-card">
+      <img src="image/Tie-Dyehs02.png" alt="ประวัติ / History">
+      <div class="menu-text">
+        <span class="lang th active">ประวัติ</span>
+        <span class="lang en">History</span>
+      </div>
+    </a>
+
+    <a href="howtomake.html" class="menu-card">
+      <img src="image/home01.webp" alt="วิธีการทำ / Method">
+      <div class="menu-text">
+        <span class="lang th active">วิธีการทำ</span>
+        <span class="lang en">How to Make</span>
+      </div>
+    </a>
+
+    <a href="facilities.html" class="menu-card">
+      <img src="image/kp6.jpg" alt="สินค้า / Products">
+      <div class="menu-text">
+        <span class="lang th active">เกี่ยวกับสินค้า</span>
+        <span class="lang en">Products</span>
+      </div>
+    </a>
+
+    <a href="highlights.html" class="menu-card">
+      <img src="image/W&E Home.png" alt="Workshop / Event">
+      <div class="menu-text">
+        <span class="lang th active">กิจกรรมและอีเวนต์</span>
+        <span class="lang en">Workshop & Event</span>
+      </div>
+    </a>
+
+  </section>
+
+
+  <section id="about" class="py-5 bg-overlay">
+    <div class="container">
+
+      <h2>
+        <span class="lang th active">ประวัติผ้ามัดย้อมสีธรรมชาติ</span>
+        <span class="lang en">History of Natural Dye Tie-Dye</span>
+      </h2>
+
+      <p>
+
+        <span class="lang th active">
+          ผ้ามัดย้อมสีธรรมชาติเป็นศิลปะการย้อมผ้าด้วยเทคนิคการต้านทานสี(ResistDyeing)โดยการมัดพับหรือ
+          เย็บผ้าในส่วนที่ต้องการให้สีไม่ติดซึ่งมีต้นกำเนิดในหลายภูมิภาคของโลกลย้อนหลังไปกว่า5,000ปียุคโบราณ:
+          หลักฐานแรกเริ่มพบใน
+          อินเดีย จีน อินโดนีเซีย (รู้จักในชื่อ เปลังก์) และแอฟริกา โดยใช้วัตถุดิบจากพืช เช่น ราก เธือก แก่น และใบไม้
+          ในประเทศไทย: มีการสืบทอดเทคนิคนี้มานาน โดยเฉพาะ ผ้ามัดหมี่ (Mudmee)
+          ซึ่งอาจมีมาตั้งแต่สมัยอยุธยามีชื่อเสียงในด้านการย้อมด้วย คราม (Indigo) จากต้นครามในภาคอีสาน
+          ปัจจุบัน:แม้เคยถูกทนแทนที่ด้วยสีย้อมสังเคราะห์แต่ในยุคปัจจุบันผ้ามัดย้อมสีธรรมชาติก็ได้รับความนิยม
+          อย่างสูงอีกครั้งเนื่องจากกระแสการอนุรักษ์สิ่งแวดล้อมและคุณค่าทางหัตถกรรมที่เป็นมิตรต่อผิวและ
+          มีเอกลักษณ์เฉพาะตัว
+        </span>
+
+
+        <span class="lang en">
+          Natural tie-dye is a textile art that uses resist-dyeing techniques, such as tying, folding, or stitching the
+          fabric to prevent color from penetrating certain areas. This craft originated in various regions around the
+          world more than 5,000 years ago.
+          Ancient evidence has been found in India, China, Indonesia (where it is known as plangi), and Africa, where
+          plant-based materials such as roots, vines, heartwood, and leaves were used as dye sources.
+          In Thailand, this technique has been passed down for generations, especially in the form of Mudmee (ikat),
+          which may date back to the Ayutthaya period. Thai Mudmee is renowned for its indigo dyeing tradition, derived
+          from indigo plants widely grown in the northeastern region.
+          In the present day, although natural dyes were once replaced by synthetic dyes, natural tie-dye has regained
+          strong popularity due to the rising interest in environmental conservation, skin-friendly craftsmanship, and
+          its distinctive handmade aesthetic.
+        </span>
+      </p>
+
+    </div>
+  </section>
+
+
+  <section id="shop" class="bg-light py-5">
+    <div class="container text-center">
+      <h2>
+        <span class="lang th active">แกลลอรี่</span>
+        <span class="lang en">Gallery</span>
+      </h2>
+    </div>
+  </section>
+
+
+
+  <section id="home-gallery" class="py-5 bg-light">
+    <div class="container">
+
+      <div id="homeGalleryCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <img src="image/Gallery1.jpg" class="w-100 rounded" alt="">
+              </div>
+              <div class="col-md-6">
+                <img src="image/Gallery2.jpg" class="w-100 rounded" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <img src="image/Gallery6.jpg" class="w-100 rounded" alt="">
+              </div>
+              <div class="col-md-6">
+                <img src="image/Gallery5.jpg" class="w-100 rounded" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeGalleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#homeGalleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="image-alternate-section">
+
+    <div class="image-row">
+      <img src="image/lcfc1.jpg" alt="">
+      <img src="image/kp5.jpg" alt="">
+    </div>
+
+    <div class="image-row reverse">
+      <img src="image/lcfc5.jpg" alt="">
+      <img src="image/lcfc2.jpg" alt="">
+    </div>
+
+    <div class="image-row">
+      <img src="image/kp7.jpg" alt="">
+      <img src="image/kp4.jpg" alt="">
+    </div>
+
+  </section>
+
+
+
+  <section id="contact" class="py-5">
+    <div class="container">
+
+      <h2>
+        <span class="lang th active">ติดต่อเรา</span>
+        <span class="lang en">Contact Us</span>
+      </h2>
+
+      <p><span class="lang th active">ที่อยู่: ถนนพระปกเกล้า ซอย 4, เมืองเชียงใหม่</span>
+        <span class="lang en">Address: Phra Pokklao Rd Soi 4, Chiang Mai</span>
+      </p>
+
+      <p><span class="lang th active">โทร: 011-360-9788</span>
+        <span class="lang en">Phone: 011-360-9788</span>
+      </p>
+
+      <p><span class="lang th active">Email: tiedye@gamil.com</span>
+        <span class="lang en">Email: tiedye@gamil.com</span>
+      </p>
+      <p>
+        <span class="lang th active">Facebook: Tie-dye Offcial</span>
+        <span class="lang en">Facebook: Tie-dye Offcial</span>
+      </p>
+    </div>
+  </section>
+
+
+
+  <footer class="py-4 text-center bg-dark text-light">
+
+    <p class="mb-0">
+      &copy; 2025 Tie-dye.
+      <span class="lang th active">สงวนลิขสิทธิ์</span>
+      <span class="lang en">All rights reserved</span>
+    </p>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang.' + lang).forEach(el => el.classList.add('active'));
+    }
+  </script>
+
+</body>
+
+</html>
